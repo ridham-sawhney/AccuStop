@@ -1,0 +1,27 @@
+.dialogDimensions{
+    max-width: 300px;
+    width: 100%;
+    min-width: 220px;
+    max-height: 80vh;
+}
+
+.restartDialog{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.restartDialog h1,h3{
+    align-self: center;
+}
+
+.restartDialog p{
+align-self: start;
+}
+
+.restartDialog form{
+    align-self:flex-end;
+}
