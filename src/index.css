@@ -24,6 +24,7 @@ body {
   position: absolute;
   bottom:0;
   background-color: white;
+  color: black;
   height: 30px;
   display: flex;
   align-items: center;
@@ -33,4 +34,8 @@ font-optical-sizing: auto;
 font-weight: 400;
 font-size: 20px;
 font-style: normal;
+}
+
+#developerBar a{
+  color: blue;
 }
