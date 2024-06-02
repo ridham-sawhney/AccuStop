@@ -45,7 +45,7 @@
         box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
       }
       .Glitchbutton::after {
-        animation: glitch_4011 1s infinite;
+        animation: glitch_4011 1s ;
         text-shadow: 10 10px 10px black;
         animation-timing-function: steps(2, end);
         text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
