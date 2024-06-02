@@ -1,0 +1,103 @@
+.game-ground {
+    display: flex;
+    min-width: 250px;
+    justify-content: space-around;
+    margin: 50px;
+
+    button{
+        margin-top: 75px;
+    }
+
+    button,
+    button:focus {
+        font-size: 17px;
+        padding: 10px 25px;
+        border-radius: 0.7rem;
+        background-image: linear-gradient(rgb(214, 202, 254), #3bdcae, #3bdcc7);
+        border: 2px solid rgb(50, 50, 50);
+        border-bottom: 5px solid rgb(50, 50, 50);
+        box-shadow: 0px 1px 6px 0px #3bdcc7;
+        transform: translate(0, -3px);
+        cursor: pointer;
+        transition: 0.2s;
+        transition-timing-function: linear;
+    }
+
+    button:active {
+        transform: translate(0, 0);
+        border-bottom: 2px solid rgb(50, 50, 50);
+    }
+
+}
+
+.box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.box::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+}
+
+.box:hover:before,
+.box:hover:after {
+    transform: skewX(0deg) scaleX(1.3);
+}
+
+.box:before,
+.box:after {
+    background: linear-gradient(315deg, #3bdcae, #3bdcc7)
+}
+
+.box .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    transform: 0.5s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box .content h2 {
+    font-size: 15px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
