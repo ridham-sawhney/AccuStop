@@ -34,7 +34,7 @@
   border: 3px solid rgb(0, 255, 213);
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     .Glitchbutton {
         text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
       }
