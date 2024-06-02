@@ -2,6 +2,7 @@ import { useState,useEffect, useRef } from 'react'
 import './App.css'
 import Dialog from './components/Dialog/Dialog';
 import GlitchLoader from './components/ReusableComponents/GlitchLoader/GlitchLoader';
+import GameIntro from './components/GameIntro/GameIntro';
 function App() {
   const [loadingStatus,updateLoadingStatus] = useState('on');
   let dialogRef = useRef();
@@ -18,6 +19,7 @@ function App() {
  
   return (
     <>
+      <GameIntro/>
       <Dialog ref={dialogRef} onAction={onRestart}/>
       {loadingStatus == 'on' ? <GlitchLoader loadingStatus={loadingStatus} loadingText={'Loading...'}/> :undefined}
     </>

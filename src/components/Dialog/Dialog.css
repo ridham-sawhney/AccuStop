@@ -25,3 +25,8 @@ align-self: start;
 .restartDialog form{
     align-self:flex-end;
 }
+
+dialog:-internal-dialog-in-top-layer::backdrop{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
