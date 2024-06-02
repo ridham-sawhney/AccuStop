@@ -2,7 +2,22 @@
     font-family: "Zen Dots", sans-serif;
     font-weight: normal;
     border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .colored{
     color:aqua
+}
+
+@media screen and (max-width: 400px) {
+    .gameIntro h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 620px) {
+    .gameIntro h1 {
+        font-size: 20px;
+    }
 }
